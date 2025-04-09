@@ -27,22 +27,55 @@ function render() {
       content.innerHTML = `
         <h2>📋 Estructura por completar</h2>
         <h3>🖼️ Acá ingrese una imagen:</h3>
-        <!-- imagen aquí -->
+        <img src="stitch.jpg" alt="Imagen de Stitch" />
 
         <h3>📄 Aquí va una tabla:</h3>
-        <!-- tabla aquí -->
+        <table>
+          <tr>
+            <th> Integrantes del grupo</th>
+          </tr>
+          <tr>
+            <td> Victoria Carrasco </td>
+          </tr>
+          <tr>
+            <td> Felipe Silva </td>
+          </tr>
+          <tr>
+            <td> Carolina Ramirez </td>
+          </tr>
+          <tr>
+            <td> Bastian Chavez </td>
+          </tr>
+        </table>
 
         <h3>📑 Acá va una lista ordenada:</h3>
-        <!-- lista ordenada aquí -->
+        <ol>
+          <li> Programación front end</li>
+          <li> Base de datos no estructurada </li>
+          <li> Seguridad de la información </li>
+        </ol>
 
         <h3>📑 Acá va una lista no ordenada:</h3>
-        <!-- lista no ordenada aquí -->
+        <ul>
+          <li> Programación front end</li>
+          <li> Base de datos no estructurada </li>
+          <li> Seguridad de la información </li>
+        </ul>
 
         <h3>📥 Aquí debe ir un formulario:</h3>
-        <!-- formulario aquí -->
+        <form>
+            <h2>Formulario de contacto:</h2>
+            <label for="nombre"> Nombre:</label> <br>
+            <input type="text" id="name" name="name"><br>
+            <label for="correo"> Correo electronico:</label> <br>
+            <input type="email" id="correo" name="correo"><br>
+            <label for="lname"> Mensaje</label> <br>
+            <textarea id="mensaje" name="mensaje" cols="30" placeholder="Escribe el mensaje aqui"></textarea><br><br>
+            <input type="submit" value="Enviar">
+        </form>
 
         <h3>🔘 Aquí agregue un botón:</h3>
-        <!-- botón aquí -->
+        <buttom>Haz click aqui!</buttom>
       `;
       break;
     default:
